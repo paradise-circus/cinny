@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button, Icon, Icons, Text, config, toRem } from 'folds';
 import { Page, PageHero, PageHeroSection } from '../../components/page';
-import CinnySVG from '../../../../public/res/svg/cinny.svg';
+import FuckSVG from '../../../../public/favicon/favicon.svg';
+import pjson from '../../../../package.json';
 
 export function WelcomePage() {
   return (
@@ -14,17 +15,17 @@ export function WelcomePage() {
       >
         <PageHeroSection>
           <PageHero
-            icon={<img width="70" height="70" src={CinnySVG} alt="Cinny Logo" />}
-            title="Welcome to Cinny"
+            icon={<img width="70" height="70" src={FuckSVG} alt="[@fuck.it] Logo" />}
+            title="Welcome to Matrix"
             subTitle={
               <span>
-                Yet another matrix client.{' '}
+                Matrix client of [@fuck.it].{' '}
                 <a
-                  href="https://github.com/cinnyapp/cinny/releases"
+                  href="https://github.com/paradise-circus/cinny"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  v4.10.2
+                  v{pjson.version}
                 </a>
               </span>
             }
@@ -42,7 +43,7 @@ export function WelcomePage() {
                     Source Code
                   </Text>
                 </Button>
-                <Button
+                {/* <Button
                   as="a"
                   href="https://cinny.in/#sponsor"
                   target="_blank"
@@ -53,7 +54,7 @@ export function WelcomePage() {
                   <Text as="span" size="B400" truncate>
                     Support
                   </Text>
-                </Button>
+                </Button> */}
               </Box>
             </Box>
           </PageHero>

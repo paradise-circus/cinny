@@ -1,14 +1,14 @@
 {
-  "name": "Cinny",
-  "short_name": "Cinny",
-  "description": "Yet another matrix client",
+  "name": "Matrix [@fuck.it]",
+  "short_name": "[@fuck.it]",
+  "description": "Matrix client of [@fuck.it]",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "./",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#050505",
+  "theme_color": "#050505",
   "icons": [
     {
       "src": "./public/android/android-chrome-36x36.png",
